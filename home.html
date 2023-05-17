@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <div>
-        <img id="bg-image" src="images/bg.jpg" alt="back">
+    <div class="main flex">
         <div class="full">
             <nav class="navbar">
                 <div class="top1">
@@ -19,7 +18,8 @@
                     <h2>Student Marks Prediction</h2>
                 </div>
                 <div class="top2">
-                    <ul>
+                    <div class="toggle"><i class="fas fa-bars"></i></div>
+                    <ul class="nav-menu">
                         <li>Home</li>
                         <li>Predict</li>
                         <li>About</li>
@@ -27,16 +27,18 @@
                     </ul>
                 </div>
             </nav>
-            <div class="box">
-                <img src="images/mlpic.jpg" alt="pic2">
+            <div class="box flex">
+                <img src="./images/mlpic.jpg" alt="pic2">
                 <h1>Student Marks Predictor using Machine Learning</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex delectus veritatis nesciunt. Ducimus totam
-                    doloremque sint, tempora aliquam consequatur debitis id voluptatibus delectus vero, blanditiis,
-                    praesentium pariatur animi repellendus nobis.</p>
-                <button onclick="index.html" class="btn">Start Predicting <i class="fa-solid fa-arrow-right-long"></i>  </button>
+                    doloremque sint, tempora..</p>
+                <a href="./index.html">
+                    <button class="btn">Start Predicting <i class="fa-solid fa-arrow-right-long"></i></button>
+                </a>
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/04ce8c93ea.js" crossorigin="anonymous"></script>
 </body>
 
