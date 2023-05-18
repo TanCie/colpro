@@ -5,45 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title> Student Marks Predictor</title>
     <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-    <div class="main flex">
-        <div class="full">
-            <nav class="navbar">
-                <div class="top1">
-                    <img id="icon" src="./images/girl.png" alt="pic">
-                    <h2>Student Marks Prediction</h2>
-                </div>
-                <div class="top2">
-                    <div class="toggle"><i class="fas fa-bars"></i></div>
-                    <ul class="nav-menu">
-                        <li> <a href="./home.html"> Home </a> </li>
-                        <li> <a href="./index.html"> Predict </a> </li>
-                        <li> <a href="./about.html"> Contact Us</a> </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="box flex">
-                <img src="./images/mlpic.jpg" alt="pic2">
-                <h1>Student Marks Predictor using Machine Learning</h1>
-                <p>
-                    Education is a very important issue regarding development
-                    of a country. The main objective of educational institutions
-                    is to provide high quality education to its students. One
-                    way to accomplish this is by predicting student's academic
-                    performance and thereby taking early steps to improve 
-                    student's performance and teaching quality.
-                </p>
-                <a href="./index.html">
-                    <button class="btn">Start Predicting <i class="fa-solid fa-arrow-right-long"></i></button>
-                </a>
+    <div class="main">
+        <div class="box">
+            <div class="top">
+                <img src="./images/Logo.png" alt="logo">
+                <h1>NSHM College of Management & Technology</h1>
             </div>
+            <div class="bg">
+                <h2>Enter the number of study hours of a student</h2>
+                <form action="/action_page.php">
+                <input type="number" placeholder="Number of hours" id="fname" name="fname"><br><br>
+                </form>
+                <button class="btn"> Calculate </button>
+            </div>
+            <div class="result">
+                <h2>
+                    You have scored <span id="percent">60</span>% marks after studying for 
+                    <span id="hour"> 5 </span> hours a day.
+                </h2>
+            </div>
+            <a href="./index.html"> <i class="fa-solid fa-arrow-left-long"></i> Home </a>
         </div>
     </div>
-    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/04ce8c93ea.js" crossorigin="anonymous"></script>
 </body>
 
