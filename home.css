@@ -20,6 +20,7 @@ a {
     text-decoration: none;
     color: black;
     margin: 15px;
+    width: fit-content;
 }
 a:hover{
     color: white;
