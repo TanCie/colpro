@@ -1,76 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background: url('./images/bg.jpg') no-repeat center;
+    background-size: cover;
     height: 100vh;
 }
-.full{
+
+h1 {
+    font-size: clamp(19px, 4vw, 30px);
+}
+
+.full {
     padding: 5px;
-   margin: auto;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #162938;
-    width: 80%;
+    min-height: 650px;
     background-image: linear-gradient(white,transparent);
     border-radius: 10px;
 }
-#bg-image{
-    position: absolute;
-    z-index: -1;
-    height: 100vh;
-    width: 100%;
-}
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    margin: 0 100px;
-    padding-top: 30px;
+    align-items: center;
+    margin: 30px 50px;
 }
-.top1{
+
+.top1 {
     display: flex;
     align-items: center;
-    font-size: 22px;
-   font-family: 'Dosis', sans-serif;
+    font-size: clamp(13px, 2vw, 22px);
 }
-#icon{
+
+#icon {
     width: 60px;
 }
-.top2{
-    display: flex;
-}
-.top2 ul{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
 
+.toggle {
+    display: none;
 }
-.top2 ul li{
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
     margin-right: 20px;
+    font-size: 17px;
 }
-.box{
-    margin-top: 56px;
-    text-align: center;
+
+.toggle {
+    padding: 1.1em;
+    cursor: pointer;
+    justify-content: end;
 }
-.box img{
-    width: 22rem;
-    height: 18rem;
+
+.toggle i {
+    font-size: 2em;
+}
+
+.box {
+    margin-bottom: 25px;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.box img {
+    width: 350px;
+    height: 250px;
     margin-bottom: 20px;
     border-radius: 25px;
 }
-.box p{
-    margin: 10px auto;
-    width: 55rem;
+
+.box p {
+    margin: 15px;
 }
-.btn{
+
+.btn {
     padding: 10px 20px;
     border-radius: 25px;
     background-color: black;
     color: white;
     align-items: center;
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
     color: black;
     background-color: white;
     border: 1px solid #1d2c38;
+}
+
+@media only screen and (max-width: 650px) {
+    .navbar {
+        margin: 30px 20px 50px 20px;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .toggle, .active {
+        display: flex;
+    }
+
+    .top2 {
+        height: 70px;
+        width: 70px;
+    }
+
+    .active {
+        position: relative;
+        top: 15px;
+        left: -200px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .box img {
+        width: 300px;
+        height: 200px;
+    }
 }
