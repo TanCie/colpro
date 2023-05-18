@@ -44,7 +44,8 @@ a {
 }
 
 .result {
-    margin: 30px;
+    margin: 30px 80px;
+    text-align: center;
 }
 
 .bg {

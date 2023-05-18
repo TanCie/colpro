@@ -24,6 +24,19 @@ body {
 h1 {
     font-size: clamp(19px, 4vw, 30px);
 }
+.nav-menu a{
+    text-decoration: none;
+}
+.mar-right{
+    margin-right: 10vw;
+}
+.mar{
+    margin: 40px;
+    text-align: center;
+}
+.mar h1{
+    margin-bottom: 30px;
+}
 
 .full {
     padding: 5px;
@@ -92,7 +105,8 @@ li {
 }
 
 .box p {
-    margin: 15px;
+    margin: 15px 8vw;
+    text-align: center;
 }
 
 .btn {
