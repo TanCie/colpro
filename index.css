@@ -108,7 +108,7 @@ li {
 
 .box img {
     width: 350px;
-    height: 250px;
+    height: 270px;
     margin-bottom: 20px;
     border-radius: 25px;
 }
@@ -158,7 +158,7 @@ li {
     .active {
         position: relative;
         top: 15px;
-        left: -200px;
+        left: -185px;
     }
 }
 

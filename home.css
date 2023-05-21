@@ -19,7 +19,7 @@ body {
 a {
     text-decoration: none;
     color: black;
-    margin: 15px;
+    margin: 0 18px;
     width: fit-content;
 }
 a:hover{
@@ -30,6 +30,7 @@ a:hover{
 .box {
     background-image: linear-gradient(#ebf2f8, transparent);
     margin: 40px;
+    padding: 16px 0;
     display: flex;
     max-width: 1050px;
     flex-direction: column;
@@ -49,7 +50,7 @@ a:hover{
 }
 
 .result {
-    margin: 30px 80px;
+    margin: 30px 6vw;
     text-align: center;
 }
 
